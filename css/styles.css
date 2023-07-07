@@ -626,6 +626,7 @@ header .list-item {
 
 .field-label {
   margin-bottom: 4px;
+  color: var(--light-slate);
 }
 
 .input-icon-container {
@@ -660,6 +661,7 @@ header .list-item {
   height: 120px;
   padding: 8px 16px;
   color: rgba(46, 47, 66, 0.4);
+  resize: none;
 }
 
 .form-input:focus,
