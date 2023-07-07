@@ -692,13 +692,14 @@ textarea:focus {
   justify-content: center;
   width: 16px;
   height: 16px;
+  margin-right: 8px;
   fill: transparent;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   transition: background-color var(--quick-anim);
 }
 
-.checkbox:checked + .checkbox-label .form-checkbox-icon {
+.checkbox:checked + .checkbox-label .form-checkbox-input {
   background-color: var(--link-hover-color);
   border: none;
   fill: var(--cloud);
