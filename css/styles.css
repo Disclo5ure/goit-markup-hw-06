@@ -548,6 +548,7 @@ header .list-item {
 
   width: 408px;
   min-height: 584px;
+  padding: 72px 24px 24px 24px;
   background: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -596,13 +597,12 @@ header .list-item {
 }
 
 .form-header {
+  color: var(--main-header-color);
   font-size: 16px;
-  font-family: Roboto;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
   text-align: center;
-  margin-top: 72px;
   margin-bottom: 16px;
 }
 
@@ -618,25 +618,35 @@ header .list-item {
 .textarea::placeholder {
   color: var(--light-slate);
   font-size: 12px;
-  font-family: Roboto;
-  font-weight: 400;
-  line-height: 1.16;
-  letter-spacing: 0.48px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .field-label {
   margin-bottom: 4px;
 }
 
+.input-icon-container {
+  position: relative;
+}
+
 .form-input {
+  width: 100%;
   height: 40px;
   padding-left: 38px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color var(--quick-anim);
 }
 
 .form-input-icon {
   position: absolute;
   top: 50%;
   left: 16px;
+  transform: translateY(-50%);
+  transition: fill var(--quick-anim);
 }
 
 .comment {
@@ -662,7 +672,6 @@ header .list-item {
 
 .form-input:focus,
 input.textarea:focus {
-  appearance: none;
   border-color: var(--main-blue-color);
 }
 
@@ -802,7 +811,7 @@ input.textarea:focus {
 .footer-input,
 .footer-input::placeholder {
   color: white;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.48px;
@@ -819,8 +828,7 @@ input.textarea:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -829,4 +837,5 @@ input.textarea:focus {
 
 .footer-button-icon {
   fill: white;
+  margin-left: 16px;
 }
