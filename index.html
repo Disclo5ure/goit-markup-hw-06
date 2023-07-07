@@ -481,25 +481,31 @@
           </div>
 
           <div class="form-field comment">
-            <label for="comment" class="field-label"> Comment </label>
+            <label for="user-comment" class="field-label"> Comment </label>
             <textarea
               class="textarea"
-              type="email"
-              name="email"
-              id="comment"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
 
-          <label for="PP" class="form-checkbox field-label checkbox">
+          <div class="form-checkbox">
             <input
-              class="form-checkbox-input-none"
+              class="checkbox visually-hidden"
               type="checkbox"
-              id="PP"
-            /><span class="form-checkbox-input"></span>I accept the terms and
-            conditions of the
-            <span><a href="" class="pp-link">Privacy Policy</a></span></label
-          >
+              id="user-privacy"
+              value="true"
+            />
+            <label for="user-privacy" class="field-label checkbox-label">
+              <span class="form-checkbox-input">
+                <svg class="form-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#checkbox"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <span><a href="" class="pp-link">Privacy Policy</a></span></label
+            >
+          </div>
 
           <button class="button" type="submit">Send</button>
         </form>
