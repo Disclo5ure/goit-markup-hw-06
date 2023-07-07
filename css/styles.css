@@ -616,6 +616,7 @@ header .list-item {
 
 .field-label,
 .textarea,
+.form-input,
 .textarea::placeholder {
   font-size: 12px;
   line-height: 1.17;
@@ -640,6 +641,7 @@ header .list-item {
   padding-left: 38px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
   outline: transparent;
   transition: border-color var(--quick-anim);
